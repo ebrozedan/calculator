@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="w-25 mx-auto">Basic calculator</h1>
+    <input type="text" class="mx-16" placeholder="Enter the first number: " id="first-number">
+    <span id="selected-oprator"></span>
+    <input type="text" placeholder="Enter the second number: " id="second-number"> <br>
+   <section class="grid">
+        <input type="radio" name="operation" id = "add-button">
+    <label>Add</label>
+    <input type="radio" name="operation" id = "sub-button">
+    <label>Sub</label>
+    <input type="radio" name="operation" id = "mul-button">
+    <label>Mul</label>
+ <br>
+ <input type="radio" name="operation" id = "div-button">
+    <label>Div</label>
+    <input type="radio" name="operation" id = "pow-button">
+    <label>Pow</label>
+    <input type="radio" name="operation" id = "modulus-button">
+    <label>Mod</label>
+    <input type="radio" name="operation" id = "log-button">
+    <label>Log</label>
+ <br>
+    </section>
+    <div class="btn-container">
+    <button id="calculate-button" class="btn">Calculate</button>
+    <button id="clear-button" class="btn btn-clear">Clear</button>
+  </div>
+    <script src="scriptV1.js"></script>
+  </body>
+</html>
